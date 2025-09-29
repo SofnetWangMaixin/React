@@ -1,0 +1,74 @@
+/* 引入Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基础样式 */
+body {
+  @apply min-h-screen flex flex-col;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 内容区域样式 */
+.content {
+  @apply flex-grow container mx-auto;
+}
+
+/* 导航链接样式 */
+.nav-link {
+  @apply px-4 py-2 rounded-md transition-all duration-300;
+}
+
+.nav-link:hover {
+  @apply bg-gray-100;
+}
+
+.nav-link.active {
+  @apply bg-yellow-400 text-white;
+}
+
+/* 页面过渡动画 */
+.page-transition {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 图片使用懒加载后过渡失效 */
+.group:hover .lazy-load-image-background img {
+  transform: scale(1.05);
+}
+.lazy-load-image-background img {
+  transform: scale(1); 
+  transition: all 500ms ease !important; /* 强制执行 */
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@layer utilities {
+  .content-auto {
+      content-visibility: auto;
+  }
+  .text-shadow {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .transition-transform {
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+  }
+  .hover-lift {
+      @apply hover:-translate-y-1 transition-all duration-300;
+  }
+  .card-shadow {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+  }
+}

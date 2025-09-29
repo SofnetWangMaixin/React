@@ -1,0 +1,42 @@
+#nav-animation-logo-scroll {
+    opacity: 0;
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+/* 需要显示的元素 */
+#nav-animation-logo-scroll.visible {
+    opacity: 1;
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* 需要隐藏的元素 */
+#nav-animation-logo {
+    transition: opacity 0.5s ease;
+}
+#nav-animation-logo.hiddens {
+    opacity: 0;
+}
+#nav-animation-text {
+    transform: translate(-20%, 0);
+    transition: opacity 0.5s ease;
+}
+#nav-animation-text.hiddens {
+    opacity: 0;
+}
+#nav-animation-button {
+    transition: opacity 0.5s ease;
+}
+#nav-animation-button.hiddens {
+    opacity: 0;
+}
+
+/* 指针 */
+.cursor {
+    cursor: pointer;
+}
