@@ -3,6 +3,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'; // 如果使用�
 import company1 from '../assets/images/company1.jpg';
 import wangmaixin from '../assets/images/wangmaixin.jpg';
 import sofnet from '../assets/images/sofnet.png';
+import '../assets/icon/iconfont.css';
 
 const About = () => {
   return (
@@ -165,7 +166,7 @@ const About = () => {
       </section>
 
       {/* <!-- 企业文化 --> */}
-      <section class="">
+      <section class="" style={{paddingBottom: '50px', paddingLeft: '20px', paddingRight: '20px'}}>
         <div class="container mx-auto">
           <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-primary font-semibold inline-block mb-3"  style={{marginTop: '100px'}}>企业核心</span>
@@ -225,7 +226,7 @@ const About = () => {
           </div>
           
           {/* <!-- 企业荣誉 --> */}
-          {/* <!-- <div class="mt-20">
+          {/* <div class="mt-20">
             <div class="text-center mb-12">
               <h3 class="text-2xl md:text-3xl font-bold text-dark mb-4">企业荣誉</h3>
               <p class="text-gray-600 max-w-2xl mx-auto">
@@ -277,7 +278,7 @@ const About = () => {
           </div>
         </div>
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" style={{paddingLeft: '20px', paddingRight: '20px'}}>
             {/* <!-- 团队成员1 --> */}
             <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all group">
               <div class="relative overflow-hidden">

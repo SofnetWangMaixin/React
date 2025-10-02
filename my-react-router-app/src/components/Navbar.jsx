@@ -79,7 +79,7 @@ const Navbar = () => {
         <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm">
           <div class="container mx-auto px-4 md:px-6 lg:px-10">
             <div class="flex items-center justify-between h-20">
-              <a href="#" id="nav-animation-logo" class="flex items-center space-x-2">
+              <a href="" id="nav-animation-logo" class="flex items-center space-x-2">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center">
                   <img src="http://47.121.199.238/sofnet/logo/favicon.ico" alt="Sofnet" />
                 </div>
@@ -95,13 +95,13 @@ const Navbar = () => {
                   首页
                 </NavLink>
                 <NavLink 
-                  to="/aaa" 
+                  to="/product" 
                   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                 >
-                  产品
+                  业务
                 </NavLink>
                 <NavLink 
-                  to="/bbb" 
+                  to="/service" 
                   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                 >
                   服务
@@ -111,12 +111,6 @@ const Navbar = () => {
                   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                 >
                   关于我们
-                </NavLink>
-                <NavLink 
-                  to="/ccc" 
-                  className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
-                >
-                  动态
                 </NavLink>
               </nav>
 

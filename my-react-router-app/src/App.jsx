@@ -4,8 +4,15 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 // import Services from './pages/Services';
-// import Contact from './pages/Contact';
+import Contact from './pages/contact';
+import JoinUs from './pages/joinus';
 import NotFound from './pages/NotFound';
+import LegalNotice from './pages/legalNotice';
+import UserAgreement from './pages/userAgreement';
+import PrivacyPolicy from './pages/privacyPolicy';
+import Product from './pages/product';
+import Service from './pages/service';
+import Values from './pages/values';
 
 function App() {
   return (
@@ -18,8 +25,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/services" element={<Services />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/legalnotice" element={<LegalNotice />} />
+          <Route path="/useragreement" element={<UserAgreement />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/joinus" element={<JoinUs />} />
+          <Route path="/values" element={<Values />} />
           {/* 匹配所有未定义的路由 */}
           <Route path="*" element={<NotFound />} />
         </Routes>

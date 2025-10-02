@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -31,20 +33,50 @@ const Footer = () => {
               <div>
                   <h4 class="text-lg font-bold mb-6">关于我们</h4>
                   <ul class="space-y-3">
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors" onclick="location.href='src/page/about';">关于迷小</a></li>
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">核心价值观</a></li>
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">加入我们</a></li>
+                      <li><NavLink 
+                            to="/about" 
+                            className="text-gray-400 hover:text-white transition-colors"
+                            >
+                            关于我们
+                        </NavLink></li>
+                      <li><NavLink 
+                            to="/values" 
+                            className="text-gray-400 hover:text-white transition-colors"
+                            >
+                            核心价值观
+                        </NavLink></li>
+                      <li><NavLink 
+                            to="/joinus" 
+                            className="text-gray-400 hover:text-white transition-colors"
+                            >
+                            加入我们
+                        </NavLink></li>
                   </ul>
               </div>
               
               <div>
                   <h4 class="text-lg font-bold mb-6">客户支持</h4>
                   <ul class="space-y-3">
-                      <li><a href="#" class="text-gray-400 hover:text-white transition-colors">帮助中心</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white transition-colors">联系我们</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white transition-colors">售后服务</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white transition-colors">隐私政策</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white transition-colors">用户协议</a></li>
+                      <li>
+                        <NavLink 
+                            to="/contact" 
+                            className="text-gray-400 hover:text-white transition-colors"
+                            >
+                            联系我们
+                        </NavLink>
+                      </li>
+                      <li><NavLink 
+                            to="/privacypolicy" 
+                            className="text-gray-400 hover:text-white transition-colors"
+                            >
+                            隐私政策
+                        </NavLink></li>
+                      <li><NavLink 
+                            to="/useragreement" 
+                            className="text-gray-400 hover:text-white transition-colors"
+                            >
+                            用户协议
+                        </NavLink></li>
                   </ul>
               </div>
           </div>
@@ -55,9 +87,24 @@ const Footer = () => {
                       &copy; 2025 新乡市迷小网络科技有限公司 版权所有 | 豫
                   </p>
                   <div class="flex space-x-6">
-                      <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">隐私政策</a>
-                      <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">用户协议</a>
-                      <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors"  onclick="location.href='src/page/legalNotice';">法律声明</a>
+                        <NavLink 
+                            to="/privacypolicy" 
+                            className="text-gray-500 hover:text-white text-sm transition-colors"
+                            >
+                            隐私政策
+                        </NavLink>
+                        <NavLink 
+                            to="/useragreement" 
+                            className="text-gray-500 hover:text-white text-sm transition-colors"
+                            >
+                            用户协议
+                        </NavLink>
+                        <NavLink 
+                            to="/legalnotice" 
+                            className="text-gray-500 hover:text-white text-sm transition-colors"
+                            >
+                            法律声明
+                        </NavLink>
                   </div>
               </div>
           </div>
