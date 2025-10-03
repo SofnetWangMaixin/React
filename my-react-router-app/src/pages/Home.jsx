@@ -28,7 +28,7 @@ const Home = () => {
                         
                         <div className="w-full lg:w-1/2 relative">
                             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform rotate-0 hover:rotate-0 transition-all duration-500">
-                                <LazyLoadImage effect="blur" src={entrance}  alt="迷小科技产品展示" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectFit: 'cover' }} />
+                                <img src={entrance} alt="迷小科技产品展示" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const Home = () => {
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* 产品1 */}
+                        
                         <div className="bg-light rounded-xl overflow-hidden group hover-lift card-shadow">
                             <div className="relative h-60 overflow-hidden">
                                 <LazyLoadImage effect="blur" src={server} alt="云枢链算服务展示" className="w-full h-full object-cover transition-transform duration-500" />
@@ -59,7 +59,7 @@ const Home = () => {
                             </div>
                         </div>
                         
-                        {/* 产品2 */}
+                        
                         <div className="bg-light rounded-xl overflow-hidden group hover-lift card-shadow">
                             <div className="relative h-60 overflow-hidden">
                                 <LazyLoadImage effect="blur" src={school} alt="豫光伏储能项目展示" className="w-full h-full object-cover" />
@@ -72,7 +72,7 @@ const Home = () => {
                             </div>
                         </div>
                         
-                        {/* 产品3 */}
+                        
                         <div className="bg-light rounded-xl overflow-hidden group hover-lift card-shadow">
                             <div className="relative h-60 overflow-hidden">
                                 <LazyLoadImage effect="blur" src={disaster} alt="迷小救援服务展示" className="w-full h-full object-cover" />
@@ -156,3 +156,6 @@ const Home = () => {
 };
 
 export default Home;
+    
+    
+    

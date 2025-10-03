@@ -4,35 +4,35 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer class="bg-dark text-white pt-16 pb-8">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-dark text-white pt-16 pb-8">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               <div>
-                  <a href="#" class="flex items-center space-x-2 mb-6">
-                      <div class="w-10 h-10 rounded-lg flex items-center justify-center">
+                  <a href="#" className="flex items-center space-x-2 mb-6">
+                      <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                           <img src="http://47.121.199.238/sofnet/logo/favicon.ico" alt="Sofnet" />
                       </div>
-                      <span class="text-xl font-bold"></span>
+                      <span className="text-xl font-bold"></span>
                   </a>
-                  <p class="text-gray-400 mb-6">
+                  <p className="text-gray-400 mb-6">
                       {/* <!-- 计算改变世界 --> */}
                   </p>
               </div>
               
               <div>
-                  <h4 class="text-lg font-bold mb-6">产品与服务</h4>
-                  <ul class="space-y-3">
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">云枢链算</a></li>
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">开发者平台</a></li>
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">迷小校园</a></li>
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">Sun-Core EG</a></li>
-                      <li><a href="javascript:;" class="text-gray-400 hover:text-white transition-colors">迷小抗震救灾队伍</a></li>
+                  <h4 className="text-lg font-bold mb-6">产品与服务</h4>
+                  <ul className="space-y-3">
+                      <li><a href="javascript:;" className="text-gray-400 hover:text-white transition-colors">云枢链算</a></li>
+                      <li><a href="javascript:;" className="text-gray-400 hover:text-white transition-colors">开发者平台</a></li>
+                      <li><a href="javascript:;" className="text-gray-400 hover:text-white transition-colors">迷小校园</a></li>
+                      <li><a href="javascript:;" className="text-gray-400 hover:text-white transition-colors">Sun-Core EG</a></li>
+                      <li><a href="javascript:;" className="text-gray-400 hover:text-white transition-colors">迷小抗震救灾队伍</a></li>
                   </ul>
               </div>
               
               <div>
-                  <h4 class="text-lg font-bold mb-6">关于我们</h4>
-                  <ul class="space-y-3">
+                  <h4 className="text-lg font-bold mb-6">关于我们</h4>
+                  <ul className="space-y-3">
                       <li><NavLink 
                             to="/about" 
                             className="text-gray-400 hover:text-white transition-colors"
@@ -55,8 +55,8 @@ const Footer = () => {
               </div>
               
               <div>
-                  <h4 class="text-lg font-bold mb-6">客户支持</h4>
-                  <ul class="space-y-3">
+                  <h4 className="text-lg font-bold mb-6">客户支持</h4>
+                  <ul className="space-y-3">
                       <li>
                         <NavLink 
                             to="/contact" 
@@ -81,12 +81,12 @@ const Footer = () => {
               </div>
           </div>
           
-          <div class="border-t border-gray-800 pt-8">
-              <div class="flex flex-col md:flex-row justify-between items-center">
-                  <p class="text-gray-500 text-sm mb-4 md:mb-0">
+          <div className="border-t border-gray-800 pt-8">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                  <p className="text-gray-500 text-sm mb-4 md:mb-0">
                       &copy; 2025 新乡市迷小网络科技有限公司 版权所有 | 豫
                   </p>
-                  <div class="flex space-x-6">
+                  <div className="flex space-x-6">
                         <NavLink 
                             to="/privacypolicy" 
                             className="text-gray-500 hover:text-white text-sm transition-colors"

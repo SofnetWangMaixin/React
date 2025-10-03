@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -76,18 +76,18 @@ const Navbar = () => {
 
 
   return (
-        <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm">
-          <div class="container mx-auto px-4 md:px-6 lg:px-10">
-            <div class="flex items-center justify-between h-20">
-              <a href="" id="nav-animation-logo" class="flex items-center space-x-2">
-                <div class="w-10 h-10 rounded-lg flex items-center justify-center">
+        <header id="navbar" className="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm">
+          <div className="container mx-auto px-4 md:px-6 lg:px-10">
+            <div className="flex items-center justify-between h-20">
+              <a href="" id="nav-animation-logo" className="flex items-center space-x-2">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                   <img src="http://47.121.199.238/sofnet/logo/favicon.ico" alt="Sofnet" />
-                </div>
-                <span class="text-xl font-bold text-dark">Sofnet Inc.</span>
+                </div>  
+                <span className="text-xl font-bold text-dark">Sofnet Inc.</span>
               </a>
 
 
-              <nav id="nav-animation-text" class="hidden md:flex items-center space-x-8 nav-animation">
+              <nav id="nav-animation-text" className="hidden md:flex items-center space-x-8 nav-animation">
                 <NavLink 
                   to="/" 
                   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
@@ -114,8 +114,8 @@ const Navbar = () => {
                 </NavLink>
               </nav>
 
-              <div id="nav-animation-logo-scroll" class="">
-                <div class="w-10 h-10 rounded-lg flex items-center justify-center">
+              <div id="nav-animation-logo-scroll" className="">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                   <img src="http://47.121.199.238/sofnet/logo/favicon.ico" alt="Sofnet" ref={targetRef}/>
                 </div>
               </div>
